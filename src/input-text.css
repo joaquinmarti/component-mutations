@@ -1,0 +1,20 @@
+.input-text > input {
+  background: white;
+  color: black;
+  border: 1px solid black;
+  font-size: 16px;
+  background-color: #ddd;
+}
+.input-text[data-font-size=lg] > input {
+  font-size: 20px;
+}
+.input-text[data-borderless=true] > input {
+  border: none;
+}
+.input-text[data-is-valid] > input {
+  background: lightgreen;
+}
+[data-background=dark] .input-text > input {
+  background: #555;
+  color: white;
+}

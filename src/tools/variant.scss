@@ -1,0 +1,5 @@
+@mixin variant($name, $value) {
+  &[data-#{$name}="#{'' + $value}"] {
+    @content;
+  }
+}

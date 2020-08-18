@@ -1,0 +1,13 @@
+{
+  "name": "component-mutations",
+  "version": "1.0.0",
+  "description": "Simple examples for component mutations",
+  "author": "Joaquín Martí <joaquinmarti@gmail.com>",
+  "license": "ISC",
+  "scripts": {
+    "compile": "sass src/components/input-text.scss src/input-text.css --no-source-map"
+  },
+  "dependencies": {
+    "sass": "^1.26.10"
+  }
+}

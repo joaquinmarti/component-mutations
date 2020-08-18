@@ -1,0 +1,5 @@
+@mixin state($name) {
+  &[data-is-#{$name}] {
+    @content;
+  }
+}

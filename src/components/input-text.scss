@@ -1,0 +1,38 @@
+@import '../tools/context';
+@import '../tools/state';
+@import '../tools/variant';
+
+.input-text {
+  > input {
+    background: white;
+    color: black;
+    border: 1px solid black;
+    font-size: 16px;
+    background-color: #ddd;
+  }
+
+  @include variant(font-size, lg) {
+    > input {
+      font-size: 20px;
+    }
+  }
+
+  @include variant(borderless, true) {
+    > input {
+      border: none;
+    }
+  }
+
+  @include state(valid) {
+    > input {
+      background: lightgreen;
+    }
+  }
+
+  @include context(background, dark) {
+    > input {
+      background: #555;
+      color: white;
+    }
+  }
+}
